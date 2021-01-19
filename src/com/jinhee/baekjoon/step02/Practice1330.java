@@ -2,7 +2,7 @@ package com.jinhee.baekjoon.step02;
 
 import java.util.Scanner;
 
-public class practice1330 {
+public class Practice1330 {
 	
 	public static void main(String[] args) {
 	
