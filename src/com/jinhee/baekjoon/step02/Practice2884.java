@@ -2,7 +2,6 @@ package com.jinhee.baekjoon.step02;
 
 import java.util.Scanner;
 
-
 //문제
 //상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다.
 //
@@ -27,12 +26,12 @@ public class Practice2884 {
 		int alarmH=0;
 		int alarmM=0;
 		
-		
-		
 		if(m >= 45) {
 			alarmH = h;
 			alarmM = m - 45;
+			
 		} else if(m < 45) {
+			
 			if(h == 0) {
 				alarmH = 23;
 			} else {
@@ -43,4 +42,6 @@ public class Practice2884 {
 		}
 		System.out.println(alarmH + " " + alarmM);
 	}
+	
+	
 }

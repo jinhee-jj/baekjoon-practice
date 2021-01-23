@@ -10,7 +10,7 @@ public class Practice9498 {
 		Scanner sc = new Scanner(System.in);
 		int score = sc.nextInt();
 		
-		if(90 <= score && score <= 100) {
+		if(90 >= score && score <= 100) {
 			System.out.println("A");
 		} else if(80 <= score && score <= 89) {
 			System.out.println("B");
