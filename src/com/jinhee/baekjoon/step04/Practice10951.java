@@ -18,7 +18,6 @@ import java.io.OutputStreamWriter;
 //
 //출력
 //각 테스트 케이스마다 A+B를 출력한다.
-
 public class Practice10951 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -31,17 +30,13 @@ public class Practice10951 {
 			int firstNum = Integer.parseInt(testCase[0]);
 			int secondNum = Integer.parseInt(testCase[1]);
 			
-			
-			if(firstNum == 0 && secondNum ==0) {
-				break;
-			}
 			bw.write(firstNum + secondNum + "\n");
-			
+
+			bw.flush();
+		
 		}
 		
-		bw.flush();
-		bw.close();
-		br.close();
+		
 	}
 	
 }
