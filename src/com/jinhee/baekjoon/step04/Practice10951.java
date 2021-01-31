@@ -1,10 +1,7 @@
 package com.jinhee.baekjoon.step04;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.util.Scanner;
 
 //문제
 //두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
@@ -20,22 +17,15 @@ import java.io.OutputStreamWriter;
 //각 테스트 케이스마다 A+B를 출력한다.
 public class Practice10951 {
 	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		Scanner sc = new Scanner(System.in);
 		
-		while(true) {
 		
-			String[] testCase = br.readLine().split(" ");
+		while(sc.hasNext()) {
 			
-			int firstNum = Integer.parseInt(testCase[0]);
-			int secondNum = Integer.parseInt(testCase[1]);
-			
-			bw.write(firstNum + secondNum + "\n");
-
-			bw.flush();
-		
+			int firstNum = sc.nextInt();
+			int secondNum = sc.nextInt();
+			System.out.print(firstNum + secondNum + "\n");
 		}
-		
 		
 	}
 	

@@ -45,10 +45,11 @@ public class Practice15552 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		int caseNum = Integer.parseInt(br.readLine());
-	
+		int firstNum = 0;
 		for(int i = 0; i < caseNum; i++) {
+	
 			String[] numArr = br.readLine().split(" ");
-			int firstNum = Integer.parseInt(numArr[0]);
+			firstNum = Integer.parseInt(numArr[0]);
 			int secondNum = Integer.parseInt(numArr[1]);
 			bw.write(firstNum + secondNum + "\n");
 		}

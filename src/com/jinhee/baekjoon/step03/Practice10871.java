@@ -31,7 +31,7 @@ public class Practice10871 {
 		
 		for(int i = 0; i < a.length; i++) {
 			
-			if(x > Integer.parseInt(a[i])) {
+			if(Integer.parseInt(a[i]) < x) {
 				output += a[i] + " ";
 			}
 		}		

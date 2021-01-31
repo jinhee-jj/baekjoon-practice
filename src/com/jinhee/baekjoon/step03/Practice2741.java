@@ -22,17 +22,12 @@ public class Practice2741 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		try {
-			System.out.print("자연수 입력 : ");
+//			System.out.print("자연수 입력 : ");
 			int num = Integer.parseInt(br.readLine());
 			
 			for(int i = 1; i <= num; i++) {
 				
-				if(i != num) {
-					
-					bw.write(i + "\n");
-				} else {
-					bw.write("" + i + "");
-				}
+				bw.write(i + "\n");
 				
 			}
 			

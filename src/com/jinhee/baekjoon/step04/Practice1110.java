@@ -22,23 +22,24 @@ public class Practice1110 {
 		int n = sc.nextInt();
 		int firstN = n;
 		
-		int cnt = 1;
-		
-		
+		int cycle = 1;
+	
 		while(true) {
 			
 			int left = n / 10;
 			int right = n % 10;
 			
 			int sum = left+right;
-			n = Integer.parseInt(right+ "" + (sum%10));
+			
+			
+			n = Integer.parseInt(right+ "" + (sum % 10));
 			
 			if(n == firstN) {
 				break;
 			}
 			
-			cnt++;
+			cycle++;
 		}
-		System.out.println(cnt);
+		System.out.println(cycle);
 	}
 }
